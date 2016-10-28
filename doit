@@ -1,0 +1,8 @@
+#!/bin/sh
+
+RPM=/X/src/wdj54
+export CFLAGS="-DHAVE_CONFIG_H -I. -I$RPM -I$RPM/rpmio"
+export LDFLAGS="-L$RPM/rpmio/.libs -lrpmio -lpopt"
+
+rm -f turg *o
+make turg
