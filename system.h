@@ -503,11 +503,6 @@ extern void muntrace (void)
 
 /* ============== from misc/miscfn.h */
 
-/*@-noparams@*/
-#include "misc/glob.h"
-#include "misc/fnmatch.h"
-/*@=noparams@*/
-
 #if defined(__LCLINT__)
 /*@-declundef -incondefs @*/ /* LCL: missing annotation */
 #if 0
